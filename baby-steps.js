@@ -1,7 +1,7 @@
 // Declarative
-// const numbers = process.argv.slice(2);
-// if (!numbers.length) throw new Error("Numbers is not defined");
-// const sum = numbers.reduce((a, b) => +a + +b);
+const numbers = process.argv.slice(2);
+if (!numbers.length) throw new Error('Numbers is not defined');
+const sum = numbers.reduce((a, b) => +a + +b);
 
 // Imperative
 // const argv = process.argv;
