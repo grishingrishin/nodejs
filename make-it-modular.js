@@ -1,6 +1,6 @@
 const dirPath = process.argv[2];
 const filesExtensions = process.argv[3];
-const mymodule = require('./solutionFilter.js');
+const solutionFilter = require('./solutionFilter.js');
 
 function cb(err, data) {
     if (err) throw err;
@@ -8,4 +8,4 @@ function cb(err, data) {
     return console.log(lines);
 }
 
-mymodule(dirPath, filesExtensions, cb);
+solutionFilter(dirPath, filesExtensions, cb);
