@@ -15,7 +15,7 @@ http.get(process.argv[2], res => {
 
     res.pipe(
         bl((err, data) => {
-            if (err) return err;
+            if (err) throw err;
             const length = data.length;
             const str = data.toString();
             return console.log(`${length}\n${str}`);
