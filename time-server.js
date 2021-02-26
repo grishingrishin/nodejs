@@ -13,6 +13,7 @@ const server = net.createServer(socket => {
     const customDate = `${year}-${month}-${day} ${hour}:${minutes}\n`;
 
     socket.end(customDate);
+    return;
 });
 
 server.listen(port);

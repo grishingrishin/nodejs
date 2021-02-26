@@ -7,5 +7,6 @@ fs.readdir(dirPath, (err, list) => {
     if (err) throw err;
     const filtered = list.filter(file => path.extname(file) == `.${filesExtensions}`);
     const lines = filtered.join('\n');
-    return console.log(lines);
+    console.log(lines);
+    return;
 });

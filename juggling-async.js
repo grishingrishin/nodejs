@@ -18,7 +18,8 @@ const cb = res => {
         bl((err, data) => {
             if (err) throw err;
             const str = data.toString();
-            return console.log(str);
+            console.log(str);
+            return;
         })
     );
 };
